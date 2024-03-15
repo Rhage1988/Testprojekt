@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <script language="javascript" type="text/javascript" src="./script.js"></script>
+    <link rel="icon" type="image/jpeg" href="./img/Favicon Lieferando.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Raleway:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="header"></div>
+        <div class="icon-div">
+            <h1>Lieferando</h1><img src="./img/Favicon Lieferando.jpeg">
+            <h2>Warenkorb</h2>
+        </div>
+        <div class="mainfood">
+            <div class="foodsandbasket">
+                <div class="menuediv">
+                    <div class="head-of-foods">Vegetarische Gartenpizza</div>
+                    <div class="foods">
+                        <img src="./img/Vegetarische Gartenpizza 1.jpeg">
+                        <button onclick="addToBasket(13.99, 'Vegetarische Gartenpizza')" class="addbutton">+</button>
+                        <span class="ingredients"><b>Zutaten:</b>Pesto, Zucchini, Paprika, Kirschtomaten, Spinat, rote
+                            Zwiebeln, Feta-Käse und Basilikum</span><br>
+                        <span class="pricetag"><strong>Preis:13.99€</strong></span>
+                    </div>
+                    <div class="head-of-foods">Mediterrane Meeresfrüchte Pizza</div>
+                    <div class="foods">
+                        <img src="./img/Mediterrane Meeresfrüchte Pizza 2.jpeg">
+                        <button onclick="addToBasket(14.99, 'Mediterrane Meeresfrüchte Pizza')"
+                            class="addbutton">+</button>
+                        <span class="ingredients"><b>Zutaten:</b>Tomatensauce, Mozzarella, Garnelen, Muscheln,
+                            Tintenfischringe, Oliven, Kapern und frische Petersilie</span>
+                        <span class="pricetag"><strong>Preis:14.99 €</strong></span>
+                    </div>
+                    <div class="head-of-foods">Klassische Margherita Pizza</div>
+                    <div class="foods">
+                        <img src="./img/Klassische Margherita Pizza 2.jpeg">
+                        <button onclick="addToBasket(9.99, 'Klassische Margherita Pizza')" class="addbutton">+</button>
+                        <span class="ingredients"><b>Zutaten:</b>Tomatensauce, Mozzarella, frisches Basilikum und ein
+                            Hauch Olivenöl</span>
+                        <span class="pricetag"><strong>Preis:9.99€</strong></span>
+                    </div>
+                    <div class="head-of-foods">Scharfe Pepperoni Pizza</div>
+                    <div class="foods">
+                        <img src="./img/Scharfe Pepperoni Pizza 1.jpeg">
+                        <button onclick="addToBasket(12.99, 'Scharfe Pepperoni Pizza')" class="addbutton">+</button>
+                        <span class="ingredients"><b>Zutaten:</b>Tomatensauce, extra scharfe Pepperoni, geriebener
+                            Parmesan und rote Chiliflocken</span>
+                        <span class="pricetag"><strong>Preis:12.99€</strong></span>
+                    </div>
+                </div>
+                <div class="shoppingbasket">
+                    <div class="delivery-section">
+                        <p>Bestellungen</p>
+                        <div class="delivery-variant">
+                            <img onclick="updateShippingCost(0.00)" src="./img/Fahrrad Lieferung.png">kostenlos
+                            <img onclick="updateShippingCost(4.99)" src="./img/Fast Delivery.jpeg">Lieferung 4.99 €
+                        </div>
+                    </div>
+                    <div class="basket-items">  
+                    </div>
+                    <div class="endprice"></div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="left-Footer">
+                <span>Datenschutz</span>
+                <span>Impressum</span>
+            </div>
+            <div class="right-Footer">@ Robert Andres</div>
+
+
+        </footer>
+    </div>
+</body>
+
+</html>
